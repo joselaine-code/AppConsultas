@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="br.com.joselaine.drconsulta.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_cadastrosFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:destination="@id/cadastrosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrosFragment"
+        android:name="br.com.joselaine.drconsulta.CadastroFragment"
+        android:label="fragment_cadastros"
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastrosFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_cadastrosFragment_to_cadastrarFragment"
+            app:destination="@id/cadastrarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarFragment"
+        android:name="br.com.joselaine.drconsulta.CadastrarFragment"
+        android:label="fragment_cadastrar"
+        tools:layout="@layout/fragment_cadastrar" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.joselaine.drconsulta.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>
