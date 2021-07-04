@@ -18,29 +18,29 @@ class CadastroFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentCadastroBinding.inflate(inflater, container, false)
         return binding?.root
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val fragmentsList = listOf(CadastrarFragment(), LoginFragment())
         val fragmentsTitleList = listOf("Cadastre-se", "Login")
 
         activity?.let {
             val viewPagerAdapter = ViewPagerAdapter(
-                fragmentManager = it.supportFragmentManager,
+                fragmentManager = childFragmentManager,
                 fragmentsList = fragmentsList,
                 fragmentsTitleList = fragmentsTitleList
             )
             binding?.let { bindingNonNull ->
                 with(bindingNonNull) {
                     vpPages.adapter = viewPagerAdapter
-                    tabLayout.setupWithViewPager(vpPages, false)
+                    tabLayout.setupWithViewPager(vpPages)
 
                 }
             }
         }
-
     }
 
     override fun onDestroyView() {

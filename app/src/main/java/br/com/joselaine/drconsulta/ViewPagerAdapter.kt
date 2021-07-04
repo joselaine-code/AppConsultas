@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 class ViewPagerAdapter(
     private val fragmentsList: List<Fragment>,
     private val fragmentsTitleList: List<String>,
-    fragmentManager: FragmentManager
+    val fragmentManager: FragmentManager
 ): FragmentPagerAdapter(fragmentManager) {
 
     override fun getCount() = fragmentsList.size
