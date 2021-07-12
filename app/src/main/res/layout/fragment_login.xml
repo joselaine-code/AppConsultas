@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".LoginFragment">
+    tools:context=".fragment.LoginFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_email"
@@ -44,7 +44,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/botaoLogin"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -52,7 +52,6 @@
         android:text="Login"
         android:textStyle="bold"
         app:backgroundTint="@color/button"
-        app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_senha" />

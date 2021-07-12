@@ -1,8 +1,7 @@
-package br.com.joselaine.drconsulta
+package br.com.joselaine.drconsulta.util
 
 import android.text.Editable
 import android.text.TextWatcher
-import android.widget.EditText
 import com.google.android.material.textfield.TextInputEditText
 
 class Mask{

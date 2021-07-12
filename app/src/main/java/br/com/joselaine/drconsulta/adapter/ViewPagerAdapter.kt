@@ -1,4 +1,4 @@
-package br.com.joselaine.drconsulta
+package br.com.joselaine.drconsulta.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

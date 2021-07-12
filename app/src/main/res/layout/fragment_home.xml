@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fotoPerfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Olá, Joselaine"
+        android:textColor="#575757"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/fotoPerfil"
+        app:layout_constraintEnd_toStartOf="@id/fotoPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fotoPerfil" />
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Qual especialidade"
+        android:textColor="#575757"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textHello" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/rubik_light"
+        android:text="você busca hoje?"
+        android:textColor="#575757"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/titulo1" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/especialidades"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:iconSize="20dp"
+        app:iconTint="#BABABA"
+        app:iconTintActive="@color/bg"
+        app:indicatorColor="@color/button"
+        app:indicatorRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation_menu"
+        app:textColor="@color/bg"
+        app:textSize="15sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

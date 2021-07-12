@@ -6,7 +6,7 @@
     app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/splashFragment"
-        android:name="br.com.joselaine.drconsulta.SplashFragment"
+        android:name="br.com.joselaine.drconsulta.fragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -17,7 +17,26 @@
     </fragment>
     <fragment
         android:id="@+id/cadastrosFragment"
-        android:name="br.com.joselaine.drconsulta.CadastroFragment"
+        android:name="br.com.joselaine.drconsulta.fragment.CadastroFragment"
         android:label="fragment_cadastros"
-        tools:layout="@layout/fragment_cadastro" />
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastrosFragment_to_checarEmailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:destination="@id/checarEmailFragment" />
+        <action
+            android:id="@+id/action_cadastrosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checarEmailFragment"
+        android:name="br.com.joselaine.drconsulta.fragment.ChecarEmailFragment"
+        android:label="fragment_checar_email"
+        tools:layout="@layout/fragment_checar_email" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.joselaine.drconsulta.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

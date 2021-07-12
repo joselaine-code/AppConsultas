@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "692322960658",
+    "project_id": "appconsulta-a6232",
+    "storage_bucket": "appconsulta-a6232.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692322960658:android:6aaf36b68d8337fbd89fcb",
+        "android_client_info": {
+          "package_name": "br.com.joselaine.drconsulta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692322960658-easp565ckkqd2mer55laqi2qptgfgphj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX9EbqXxnlRtpKRiWjb4dtC7yD_FbBHqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692322960658-easp565ckkqd2mer55laqi2qptgfgphj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

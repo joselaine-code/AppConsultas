@@ -1,4 +1,4 @@
-package br.com.joselaine.drconsulta
+package br.com.joselaine.drconsulta.util
 
 class CPFUtil{
     companion object {

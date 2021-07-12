@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+
 }
 
 android {
@@ -54,4 +55,13 @@ dependencies {
 
     //Lottie
     implementation 'com.airbnb.android:lottie:3.7.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Ken Burns
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+
+    //Smooth Bottom Bar
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.8'
 }

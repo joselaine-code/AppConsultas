@@ -1,8 +1,8 @@
-package br.com.joselaine.drconsulta
+package br.com.joselaine.drconsulta.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.tabs.TabLayout
+import br.com.joselaine.drconsulta.R
 
 class InicioActivity : AppCompatActivity() {
 
