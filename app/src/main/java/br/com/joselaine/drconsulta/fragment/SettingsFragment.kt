@@ -43,36 +43,21 @@ class SettingsFragment : Fragment() {
 
     private fun salvarPreferencias() {
         val notificacao = binding?.switchNotificacao?.isChecked
+        val dark = binding?.switchTemaEscuro?.isChecked
+        val biometria = binding?.switchBiometria?.isChecked
 
-        if (binding?.switchNotificacao?.isChecked == true) {
-            sharedPreferences.edit {
-                putBoolean(KEY_SHARED_NOTIFICACAO, true)
-            }
-        } else {
-            sharedPreferences.edit {
-                putBoolean(KEY_SHARED_NOTIFICACAO, false)
-            }
+        sharedPreferences.edit {
+            notificacao?.let { putBoolean(KEY_SHARED_NOTIFICACAO, it) }
         }
 
-        if (binding?.switchTemaEscuro?.isChecked == true) {
-            sharedPreferences.edit {
-                putBoolean(KEY_SHARED_DARK, true)
-            }
-        } else {
-            sharedPreferences.edit {
-                putBoolean(KEY_SHARED_DARK, false)
-            }
+        sharedPreferences.edit {
+            dark?.let { putBoolean(KEY_SHARED_DARK, it) }
         }
 
-        if (binding?.switchBiometria?.isChecked == true) {
-            sharedPreferences.edit {
-                putBoolean(KEY_SHARED_BIOMETRIA, true)
-            }
-        } else {
-            sharedPreferences.edit {
-                putBoolean(KEY_SHARED_BIOMETRIA, false)
-            }
+        sharedPreferences.edit {
+            biometria?.let { putBoolean(KEY_SHARED_BIOMETRIA, it) }
         }
+
     }
 
 
