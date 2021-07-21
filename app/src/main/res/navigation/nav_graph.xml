@@ -28,6 +28,12 @@
         <action
             android:id="@+id/action_cadastrosFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_cadastrosFragment_to_listaProfissionaisFragment"
+            app:destination="@id/listaProfissionaisFragment" />
+        <action
+            android:id="@+id/action_cadastrosFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
     </fragment>
     <fragment
         android:id="@+id/checarEmailFragment"
@@ -39,4 +45,13 @@
         android:name="br.com.joselaine.drconsulta.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/listaProfissionaisFragment"
+        android:name="br.com.joselaine.drconsulta.fragment.ListaProfissionaisFragment"
+        android:label="fragment_lista_profissionais"
+        tools:layout="@layout/fragment_lista_profissionais" />
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="br.com.joselaine.drconsulta.fragment.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>

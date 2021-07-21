@@ -28,7 +28,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/rubik_light"
-        android:text="No nosso aplicativo, você encontra os melhores médicos, psicólogos, nutricionais e demais profissionais da saúde."
+        android:text="No nosso aplicativo, você encontra os melhores médicos, psicólogos, nutricionistas e demais profissionais da saúde."
         android:textColor="#1D1D1D"
         android:textSize="15sp"
         android:textStyle="bold"
